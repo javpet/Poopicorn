@@ -95,7 +95,7 @@ header h1 {
   width: 200px;
 }
 
-header nav a {
+header nav a, footer p {
   font-weight: 700;
   margin-left: 10px;
   transition: border 400ms ease-in;
@@ -115,7 +115,7 @@ header nav a.selected {
   border-bottom: 2px solid #FE5294;
 }
 
-section.main-section, section.video-section {
+section.main-section, section.video-section, section.team-section {
   padding: 20px;
   min-height: 400px;
   display: flex;
@@ -126,6 +126,13 @@ section.main-section, section.video-section {
 
 section.video-section {
   background-image: url(img/pattern_2.svg);
+}
+
+section.team-section {
+  background-image: url(img/pattern_3.svg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 section.main-section img {
@@ -176,7 +183,7 @@ section .description p {
 
 section .description h2 {
   font-family: 'Fredoka One', sans-serif;
-  font-size: 97px;
+  font-size: 96px;
   line-height: 1.2;
   color: #033562;
   text-shadow: 5px 5px #FADF12;
@@ -189,4 +196,39 @@ section .description p {
 section .video-section .youtube {
   width: 700px;
   height: 500px;
+}
+
+section.team-section .team h2 {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 96px;
+  line-height: 1.2;
+  color: #FADF12;
+  text-shadow: 5px 5px #FEA243;
+}
+
+section.team-section .faces {
+  display: flex;
+}
+
+section.team-section .faces img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 100%;
+  border: 5px solid #FADF12;
+  box-shadow: 5px 5px 0px #FEA243;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid #033562;
+}
+
+footer p {
+
 }
