@@ -87,7 +87,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 3;
+  z-index: 2;
   border-bottom: 3px solid #033562;
 }
 
@@ -126,6 +126,7 @@ section.main-section, section.video-section, section.team-section {
 
 section.video-section {
   background-image: url(img/pattern_2.svg);
+  flex-wrap: wrap;
 }
 
 section.team-section {
@@ -150,9 +151,10 @@ section.main-section h2 {
 
 section .headliners {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  width: 900px;
+  max-width: 900px;
   text-align: right;
 }
 
@@ -190,12 +192,17 @@ section .description h2 {
 }
 
 section .description p {
-  width: 650px;
+  max-width: 650px;
 }
 
-section .video-section .youtube {
-  width: 700px;
-  height: 500px;
+section.video-section .youtube {
+  width: 50%;
+}
+
+section.video-section .dashboard {
+  width: 650px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #033562;
 }
 
 section.team-section .team h2 {
@@ -208,6 +215,8 @@ section.team-section .team h2 {
 
 section.team-section .faces {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 section.team-section .faces img {
@@ -229,6 +238,139 @@ footer {
   border-top: 3px solid #033562;
 }
 
-footer p {
+@media (max-width: 1366px) {
 
+  section.main-section h2, section .description h2, section.team-section .team h2 {
+    font-size: 72px;
+  }
+
+  section .headliners p, section .description p {
+    font-size: 18px;
+  }
+
+  section.video-section .youtube, section.video-section .dashboard {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  section.main-section h2, section .description h2, section.team-section .team h2 {
+    font-size: 48px;
+  }
+
+  section.main-section, section.video-section, section.team-section {
+    min-height: 0px;
+  }
+
+  section .headliners p, section .description p {
+    font-size: 16px;
+  }
+
+  section .headliners a {
+    font-size: 20px;
+  }
+
+  section.video-section .youtube, section.video-section .dashboard {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  section .description p {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section #dashboard {
+    order: 1;
+    margin-top: 60px;
+  }
+
+  section .dashboard {
+    order: 2;
+  }
+
+  section.video-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+    header {
+      display: block;
+    }
+
+    header nav a {
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+
+    .main-section {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    section.main-section img {
+      width: 60%;
+      height: 60%;
+    }
+
+}
+
+@media (max-width: 750px) {
+    section.main-section {
+      justify-content: center;
+      align-items: center;
+    }
+
+    section.team-section .faces img {
+      width: 70px;
+      height: 70px;
+    }
+
+}
+
+@media (max-width: 680px) {
+    body {
+      padding-top: 120px;
+    }
+
+    section .headliners {
+      text-align: left;
+    }
+
+    section .headliners a {
+      padding-left: 0;
+    }
+
+    section .headliners p, section .description p {
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+  body {
+    padding-top: 160px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  header nav a {
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section #dashboard {
+    margin-top: 30px;
+  }
 }
