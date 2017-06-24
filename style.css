@@ -103,6 +103,10 @@ header nav a {
   padding-bottom: 3px;
 }
 
+header nav a:nth-child(1) {
+  color: #FE5294;
+}
+
 header nav a:hover {
   border-bottom: 3px solid #FE5294;
 }
@@ -112,9 +116,52 @@ header nav a.selected {
 }
 
 section.main-section {
+  padding: 20px;
   min-height: 400px;
   display: flex;
   justify-content: space-between;
   background-image: url(img/pattern.svg);
   background-size: 60px 60px;
+}
+
+section.main-section img {
+  width: 500px;
+  height: 500px;
+}
+
+section.main-section h2 {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 96px;
+  line-height: 1.2;
+  color: #FFF;
+  text-shadow: 5px 5px #033562;
+}
+
+section .headliners {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 900px;
+  text-align: right;
+}
+
+section .headliners a {
+  margin-top: 20px;
+  padding: 20px;
+  padding-right: 0;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 2px 2px #033562;
+  border-radius: 10px;
+}
+
+section .headliners p {
+  font-size: 24px;
+  color: #FFF;
+  /*background-color: #033562;*/
+  background-color: #FE5294;
+  box-shadow: 5px 5px 0px #033562;
+  padding: 20px;
+  border-radius: 10px;
 }
