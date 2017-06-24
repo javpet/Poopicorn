@@ -115,13 +115,17 @@ header nav a.selected {
   border-bottom: 2px solid #FE5294;
 }
 
-section.main-section {
+section.main-section, section.video-section {
   padding: 20px;
   min-height: 400px;
   display: flex;
   justify-content: space-between;
   background-image: url(img/pattern.svg);
   background-size: 60px 60px;
+}
+
+section.video-section {
+  background-image: url(img/pattern_2.svg);
 }
 
 section.main-section img {
@@ -156,12 +160,33 @@ section .headliners a {
   border-radius: 10px;
 }
 
-section .headliners p {
+section .headliners p, section .description p {
   font-size: 24px;
   color: #FFF;
-  /*background-color: #033562;*/
   background-color: #FE5294;
   box-shadow: 5px 5px 0px #033562;
   padding: 20px;
+  margin-top: 10px;
   border-radius: 10px;
+}
+
+section .description p {
+  background-color: #FADF12;
+}
+
+section .description h2 {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 96px;
+  line-height: 1.2;
+  color: #033562;
+  text-shadow: 5px 5px #FADF12;
+}
+
+section .description p {
+  width: 650px;
+}
+
+section .video-section .youtube {
+  width: 700px;
+  height: 500px;
 }
