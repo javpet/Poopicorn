@@ -231,6 +231,12 @@ section.team-section .faces img {
   box-shadow: 5px 5px 0px #FEA243;
 }
 
+section.team-section .team-photo {
+  margin-top: 20px;
+  width: 80%;
+  box-shadow: 5px 5px 0px #FEA243
+}
+
 footer {
   width: 100%;
   padding: 20px;
@@ -321,6 +327,10 @@ footer {
       height: 60%;
     }
 
+    section.team-section .team-photo {
+      width: 100%;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -332,6 +342,11 @@ footer {
     section.team-section .faces img {
       width: 70px;
       height: 70px;
+    }
+
+    footer {
+      flex-direction: column;
+      text-align: center;
     }
 
 }
@@ -366,11 +381,6 @@ footer {
 
   header nav a {
     font-size: 18px;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
   }
 
   section #dashboard {
