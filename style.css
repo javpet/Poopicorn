@@ -335,7 +335,7 @@ footer {
 
 @media (max-width: 680px) {
     body {
-      padding-top: 120px;
+      padding-top: 100px;
     }
 
     section .headliners {
@@ -354,7 +354,7 @@ footer {
 @media (max-width: 480px) {
 
   body {
-    padding-top: 160px;
+    padding-top: 140px;
   }
 
   h2 {
