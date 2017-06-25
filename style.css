@@ -208,6 +208,10 @@ section.video-section .dashboard {
   box-shadow: 5px 5px 0px #033562;
 }
 
+section.video-section .dashboard img {
+  border-radius: 10px;
+}
+
 section.team-section .team h2 {
   font-family: 'Fredoka One', sans-serif;
   font-size: 96px;
@@ -234,7 +238,12 @@ section.team-section .faces img {
 section.team-section .team-photo {
   margin-top: 20px;
   width: 80%;
+  border-radius: 10px;
   box-shadow: 5px 5px 0px #FEA243
+}
+
+section.team-section .team-photo img {
+  border-radius: 10px;
 }
 
 footer {
