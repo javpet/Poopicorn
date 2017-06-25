@@ -199,6 +199,8 @@ section .description p {
 }
 
 section.video-section .youtube {
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #033562;
   width: 50%;
 }
 
@@ -208,7 +210,7 @@ section.video-section .dashboard {
   box-shadow: 5px 5px 0px #033562;
 }
 
-section.video-section .dashboard img {
+section.video-section .dashboard img, section.video-section .youtube img {
   border-radius: 10px;
 }
 
@@ -272,6 +274,7 @@ footer {
 }
 
 @media (max-width: 1200px) {
+
   section.main-section h2, section .description h2, section.team-section .team h2 {
     font-size: 48px;
   }
@@ -289,7 +292,7 @@ footer {
   }
 
   section.video-section .youtube, section.video-section .dashboard {
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin-top: 40px;
   }
