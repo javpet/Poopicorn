@@ -329,9 +329,11 @@ footer {
       margin-right: 10px;
     }
 
-    .main-section {
+
+    section.main-section {
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
 
     section.main-section img {
@@ -346,10 +348,6 @@ footer {
 }
 
 @media (max-width: 780px) {
-    section.main-section {
-      justify-content: center;
-      align-items: center;
-    }
 
     section.team-section .faces img {
       width: 70px;
