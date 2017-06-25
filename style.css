@@ -398,6 +398,10 @@ footer {
   section #dashboard {
     margin-top: 30px;
   }
+
+  section.video-section .youtube, section.video-section .dashboard {
+    width: 100%;
+  }
 }
 
 @media (max-width: 320px) {
