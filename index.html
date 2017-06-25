@@ -10,7 +10,6 @@
 
     <!-- Facebook meta tags -->
     <meta property="og:url" content="http://poopicorn.press" />
-    <meta property="fb:app_id" content="http://poopicorn.press" />
     <meta property="og:type" />
     <meta property="og:title" content="Skip fake news, poop on them with a unicorn" />
     <meta property="og:description" content="p💩💩picorn is your best friend if you want to skip fake news on any other social media sites" />
@@ -35,13 +34,13 @@
            	<a href="index.html"><img src="img/poopicorn_logo.svg"></a>
           </h1>
           <nav>
-             <a href="#">Download Multi Platform Extension</a>
-             <a href="#how we poop">How we poop?</a>
-             <a href="#dashboard">Dashboard</a>
-             <a href="#team">Team</a>
+             <a class="smoothScroll" href="#multiplatform">Download Multi Platform Extension</a>
+             <a class="smoothScroll" href="#howwepoop">How we poop?</a>
+             <a class="smoothScroll" href="#dashboard">Dashboard</a>
+             <a class="smoothScroll" ref="#team">Team</a>
           </nav>
        </header>
-       <section class="main-section">
+       <section id="multiplatform" class="main-section smoothScroll">
          <img src="img/poopicorn_logo_2.svg" alt="Illustration of a lovely unicorn which is pooping rainbow">
          <div class="headliners">
            <h2>Watch out for sh*t!</h2>
@@ -49,9 +48,9 @@
          </div>
       </section>
       <section class="video-section">
-        <div id="how we poop" class="description">
+        <div id="howwepoop" class="description">
            <h2>How we poop?</h2>
-           <p>When in doubt, wash going to catch the red dot today going to catch the red dot today but pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because</p>
+           <p>To find out if the content you are currently viewing is shitty or not, we have modelled articles from known fake and real news sources. Using state-of-the-art LSTM neural networks with an attention mechanism, we have developed a plugin that is able to detect what you are reading is good shirt or, well, just shit.</p>
         </div>
         <div class="youtube">
           <img src="img/Placeholder.png" alt="">
@@ -74,8 +73,8 @@
          <img src="img/paul_profile.jpg" alt="Paul profile picture">
          <img src="img/peterjavorkai.jpg" alt="Peter profile picture">
          <img src="img/warwick_profile.jpg" alt="Warwick profile picture">
-         <img src="img/profile_sample.png" alt="">
-         <img src="img/profile_sample.png" alt="">
+         <img src="img/cornelis_profile.jpg" alt="Cornelis profile picture">
+         <img src="img/profile_sample.png" alt="Simon profile picture">
          <img src="img/profile_sample.png" alt="">
        </div>
     </section>
@@ -83,5 +82,7 @@
       <p>Copyright 2017</p>
       <p>Made with smart 💩 in Amsterdam @Global AI Hackathon, by people who likes data</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

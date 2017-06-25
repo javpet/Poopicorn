@@ -63,6 +63,9 @@ input, textarea, select {
 
 /* End of CSS Reset */
 
+.removed {
+    border: none;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
