@@ -319,7 +319,7 @@ footer {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     header {
       display: block;
     }
@@ -334,6 +334,7 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     section.main-section img {
